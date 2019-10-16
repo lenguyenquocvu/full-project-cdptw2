@@ -1,0 +1,14 @@
+{
+    "name": "84888/result",
+    "description": "Student can input topic to teacher in here",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "84888",
+            "email": "lenguyenquocvucd17tt10@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

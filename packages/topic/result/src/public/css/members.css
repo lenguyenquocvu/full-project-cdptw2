@@ -1,0 +1,70 @@
+html, body{
+    background-color: #EFF3F4;
+    
+}
+.navbar{
+box-shadow: 0 0 10px #cecece;
+}
+.white{
+    background-color: white;
+    margin-top: 40px;
+     border-radius: 10px;
+    box-shadow: 0 0 10px #cecece;
+}
+
+.white .inline{
+    
+    border-bottom: 1px solid #E5E7E9;
+    line-height: 50px;
+}
+.title{
+    font-size: 20px;
+    border-bottom: 2px solid #CBCFD3;
+   
+}
+.status{
+   border-radius: 50px;
+   color:white;
+   font-weight: 400
+}
+.near{
+    background: #F1C40F;
+}
+.on{
+    background: #3498DB;
+}
+.finish{
+    background: #2ECC71;
+}
+.inline .text-center{
+        line-height: 50px;
+    }
+    .inline .text-left{
+        line-height: 50px;
+    }
+.text-center{
+    line-height: 40px;
+}
+.text-center1{
+    line-height: 40px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500
+}
+.out{
+    background: #E74C3C;
+}
+.overflow{
+    overflow: auto;
+}
+.overflow .row:last-child {
+
+padding-bottom: .5rem!important;
+
+}
+@media (max-width: 576px){
+    .none{
+        display: none;
+
+    }
+}

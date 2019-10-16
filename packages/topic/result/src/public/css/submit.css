@@ -1,0 +1,53 @@
+html,
+body {
+  background-color: #EFF3F4;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 0 10px #cecece;
+          box-shadow: 0 0 10px #cecece;
+}
+
+.white {
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #cecece;
+          box-shadow: 0 0 10px #cecece;
+}
+
+.white .inline {
+  border-bottom: 1px solid #E5E7E9;
+  line-height: 50px;
+}
+
+.white .topic {
+  font-size: 1.2rem;
+}
+
+.white .content .description {
+  border-bottom: 2px solid #cecece;
+}
+
+.class-student {
+  border-bottom: 2px solid #cecece;
+  padding: 7px 0;
+}
+
+.class-student p {
+  display: inline-block;
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+.submit button {
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=teacher.css.map */
