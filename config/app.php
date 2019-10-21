@@ -1,5 +1,7 @@
 <?php
 
+use Foostart\Category\CategoryServiceProvider;
+
 return [
 
     /*
@@ -167,7 +169,8 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-        Topic\Result\ResultServiceProvider::class,
+        LaravelAcl\Authentication\AuthenticationServiceProvider::class,
+        Foostart\Category\CategoryServiceProvider::class,
         /*
          * Application Service Providers...
          */
