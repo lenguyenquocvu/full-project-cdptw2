@@ -1,0 +1,21 @@
+{
+    "name": "fteam/topic",
+    "description": "Support to manage projects of students (demo - shouldn't use)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fteam",
+            "email": "fteam@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "foostart/package-acl": "*"
+    },
+    "psr-4": {
+        "App\\": "app/",
+
+        "Fteam\\Topic\\": "packages/fteam/topic/src/"
+    }
+}

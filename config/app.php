@@ -1,5 +1,6 @@
 <?php
 
+use Fteam\Topic\TopicServiceProvider;
 use Foostart\Category\CategoryServiceProvider;
 
 return [
@@ -171,6 +172,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         LaravelAcl\Authentication\AuthenticationServiceProvider::class,
         Foostart\Category\CategoryServiceProvider::class,
+        Fteam\Topic\TopicServiceProvider::class,
         /*
          * Application Service Providers...
          */

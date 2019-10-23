@@ -72,44 +72,52 @@ return [
                 "permissions" => [$admin, "_permission-editor"]
             ],
 
-            //Contexts - Subject
-            [
-                // 'name'        => 'category-admin.menus.top-menu-contexts',
-                'name'        => "Subjects",
-                "route"       => "contexts",
-                "link"        => '/admin/contexts/list',
-                "permissions" => [$admin]
-            ],
+            // //Contexts - Subject
+            // [
+            //     'name'        => 'category-admin.menus.top-menu-contexts',
+            //     // 'name'        => "Subjects",
+            //     "route"       => "contexts",
+            //     "link"        => '/admin/contexts/list',
+            //     "permissions" => [$admin]
+            // ],
 
-            //Categories - Learning Class
-            [
-                // 'name'        => 'category-admin.menus.category',
-                'name'        => 'Learning Classes',
-                "route"       => "categories",
-                "link"        => '/admin/categories/list',
-                "permissions" => [$admin, '_user-editor']
-            ],
+            // //Categories - Learning Class
+            // [
+            //     'name'        => 'category-admin.menus.category',
+            //     // 'name'        => 'Learning Classes',
+            //     "route"       => "categories",
+            //     "link"        => '/admin/categories/list',
+            //     "permissions" => [$admin, '_user-editor']
+            // ],
+
+            // [
+            //     'name'        => 'category-admin.menus.category',
+            //     // 'name'        => 'Learning Classes',
+            //     "route"       => "categories",
+            //     "link"        => '/admin/categories/list',
+            //     "permissions" => [$admin, '_user-editor']
+            // ],
             
-            [
-                'name'        => 'Projects',
-                "route"       => "categories",
-                "link"        => '/admin/categories/list',
-                "permissions" => [$admin, '_user-editor']
-            ],
+            // [
+            //     'name'        => 'Projects',
+            //     "route"       => "categories",
+            //     "link"        => '/admin/categories/list',
+            //     "permissions" => [$admin, '_user-editor']
+            // ],
 
-            [
-                'name'        => 'Teachers',
-                "route"       => "categories",
-                "link"        => '/admin/categories/list',
-                "permissions" => [$admin, '_user-editor']
-            ],
+            // [
+            //     'name'        => 'Teachers',
+            //     "route"       => "categories",
+            //     "link"        => '/admin/categories/list',
+            //     "permissions" => [$admin, '_user-editor']
+            // ],
 
-            [
-                'name'        => 'Students',
-                "route"       => "categories",
-                "link"        => '/admin/categories/list',
-                "permissions" => [$admin, '_user-editor']
-            ],
+            // [
+            //     'name'        => 'Students',
+            //     "route"       => "categories",
+            //     "link"        => '/admin/categories/list',
+            //     "permissions" => [$admin, '_user-editor']
+            // ],
             // //Posts
             // [
             //     "name"        => 'post-admin.menus.top-menu',

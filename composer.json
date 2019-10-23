@@ -20,12 +20,14 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Fteam\\Topic\\": "packages/fteam/topic/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Fteam\\Topic\\": "packages/fteam/topic/src/"
         }
     },
     "scripts": {
