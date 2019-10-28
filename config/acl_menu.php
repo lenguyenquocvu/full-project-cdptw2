@@ -30,7 +30,7 @@ return [
                 "name"        => "acl-admin.menu.dashboard",
                 "route"       => "dashboard",
                 "link"        => '/admin/users/dashboard',
-                "permissions" => []
+                "permissions" => [$admin]
             ],
 
             /*
@@ -63,6 +63,12 @@ return [
                 "permissions" => [$admin, "_group-editor"]
             ],
 
+            [
+                "name"        => "acl-admin.menu.groups",
+                "route"       => "groups",
+                "link"        => '/admin/groups/list',
+                "permissions" => ['_student']
+            ],
 
             //Permissions page
             [
@@ -71,6 +77,7 @@ return [
                 "link"        => '/admin/permissions/list',
                 "permissions" => [$admin, "_permission-editor"]
             ],
+
 
             // //Contexts - Subject
             // [

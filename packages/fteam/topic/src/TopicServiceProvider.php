@@ -16,6 +16,7 @@ class TopicServiceProvider extends ServiceProvider
         //
         $this->loadViewsFrom(__DIR__ . '/Views', 'topic');
         // $this->publishViews();
+        $this->publishAssets();
     }
 
     /**
@@ -32,5 +33,9 @@ class TopicServiceProvider extends ServiceProvider
 
     public function publishViews(){
        $this->publishes([__DIR__.'/Views' => base_path('resources/views/vendor/topic'),]);
+    }
+
+    public function publishAssets(){
+        $this->publishes([__DIR__ .'/public/student' => base_path('public/packages/student')]);
     }
 }

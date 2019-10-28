@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'student',
     ],
 
     /*
@@ -44,6 +44,11 @@ return [
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
+        ],
+        
+        'student' => [
+            'driver' => 'session',
+            'provider' => 'student',
         ],
     ],
 
@@ -74,6 +79,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'student' => [
+            'driver' => 'eloquent',
+            'model' => LaravelAcl\Authentication\Models\User::class,
+        ],
     ],
 
     /*

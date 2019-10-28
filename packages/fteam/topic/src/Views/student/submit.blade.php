@@ -1,3 +1,4 @@
+@extends('laravel-authentication-acl::admin.layouts.base-2cols')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,32 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Submit</title>
+    <link rel="stylesheet" href="{{ asset('packages/student/css/dropzone.min.css') }}">
+    <script src="{{ asset('packages/student/js/dropzone.min.js') }}"></script>
     <style>
-        .imagePreview {
-          width: 100%;
-          height: 100%;
-          background-position: center center;
-          background-size: cover;
-          -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
-          display: inline-block;
-        }
         .form-submit{
-            text-align: center;
+            margin-top: 10%;
         }
+        #submit{
+            margin-top: 2%;
+        }
+
+        .class
     </style>
 </head>
 <body>
-    Students submit projects in at hear!<br>
+    @section('content')
     <div class="form-submit">
-        {!! Form::open(['route' => ['submit-up'], 'files' => true]) !!}
-        
-        {!! Form::textarea('imagePreview') !!}
-        <br>
-        {!! Form::file('file') !!} 
+        {!! Form::open(['route' => ['submit-up'], 'class' => 'dropzone', 'id' => 'dropzonewidget']) !!}
 
-        {!! Form::submit('Submit') !!}
+        {!! Form::close() !!}
+
+        {!! Form::open(['route' => ['submit-up'], 'class' => 'submit', 'id' => 'submit', 'files' => true]) !!}
+
+        {!! Form::file('file', ['class'=> 'btn-lg pull-left file']) !!}
+
+        {!! Form::submit('Submit',['class'=> 'btn btn-lg btn-info pull-right btn-submit']) !!}
 
         {!! Form::close() !!}
     </div>
+    @stop
 </body>
 </html>
